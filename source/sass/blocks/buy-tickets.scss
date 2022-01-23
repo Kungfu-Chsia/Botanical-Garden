@@ -1,0 +1,45 @@
+.buy-tickets__wrapper {
+  display: flex;
+  margin-bottom: 115px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.buy-tickets__content {
+  display: flex;
+  margin-top: 198px;
+  flex-direction: column;
+}
+
+.buy-tickets__buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buy-tickets__button {
+  background-color: $buttons-green;
+  color: $white;
+  margin-right: 16px;
+}
+
+.buy-tickets__header {
+  font-size: 57px;
+  line-height: 63px;
+  margin-bottom: 16px;
+}
+
+.buy-tickets__text {
+  font-weight: 300;
+  font-family: "ofont.ru_Roboto", sans-serif;
+  text-transform: capitalize;
+  font-size: 25px;
+  line-height: 37px;
+  color: $main-green;
+  margin-bottom: 32px;
+  width: 471px;
+}
+
+.buy-tickets__link {
+  box-sizing: border-box;
+  border: 2px solid $buttons-green;
+}

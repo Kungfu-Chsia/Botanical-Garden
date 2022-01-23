@@ -1,0 +1,97 @@
+.news__wrapper {
+  margin-top: 96px;
+}
+
+.news__text-part-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.news__posts-wrapper {
+  display: flex;
+  margin-bottom: 96px;
+}
+
+.news__content-wrapper {
+  margin-right: 26px;
+  width: 520px;
+  margin-left: 24px;
+}
+
+.news__date {
+  font-family: "Roboto-italic", sans-serif;
+  text-transform: none;
+}
+
+.news__text-part-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.news__text-part--column {
+  display: flex;
+  border-bottom: 1px solid #C4C4C4;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  align-items: start;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:first-child {
+  padding-top: 0;
+  }
+}
+
+
+.news__posts::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 7px;
+  left: -151px;
+  width: 131px;
+  height: 2px;
+  opacity: 40%;
+  background-color: #475F45;
+}
+
+.news__posts {
+  margin-left: 151px;
+  position: relative;
+  font-family: "ofont.ru_Roboto";
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  margin-top: 16px;
+  margin-bottom: 48px;
+  align-items: center;
+  display: flex;
+}
+
+.news__posts::after {
+  position: static;
+  display: block;
+  content: '';
+  background-image: url(/img/icons/arrow-right.svg);
+  width: 24px;
+  height: 24px;
+  margin-left: 7px;
+}
+
+.news__header {
+  font-size: 23px;
+  line-height: 25px;
+  margin-bottom: 12px;
+  margin-top: 15px;
+}
+
+.news__text {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: none;
+  margin-bottom: 12px;
+}

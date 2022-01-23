@@ -1,0 +1,59 @@
+.discover {
+  background: $background-green;
+  position: relative;
+  color: $white;
+}
+
+
+.discover:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.07;
+  background-image: url(../img/leaves.png);
+  background-repeat: no-repeat;
+  background-position: right 325px;
+}
+
+.discover__wrapper {
+  padding: 96px 80px;
+}
+
+.discover__content {
+  display: flex;
+  margin-bottom: 64px;
+  align-items: flex-start;
+}
+
+.discover__slogan {
+  font-size: 45px;
+  line-height: 50px;
+  margin-bottom: 32px;
+}
+
+.discover__words {
+  margin-left: 89px;
+  text-transform: none;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.discover__link {
+  box-sizing: border-box;
+  border: 2px solid $white;
+  color: $white;
+  width: 185px;
+  height: 56px;
+  text-align: justify;
+  padding-left: 34px;
+  padding-right: 34px;
+  margin-bottom: 16px;
+}
+
+.discover__text {
+  margin-bottom: 42px;
+}

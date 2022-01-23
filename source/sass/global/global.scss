@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $main-green;
+  text-transform: uppercase;
+  min-height: 100%;
+  background: $white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list-style {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  padding: 0 99px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  text-transform: capitalize;
+  font-family: "LibreBaskerville-Regular";
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: $main-green;
+  color: $white;
+  text-transform: uppercase;
+  border: none;
+  font-family: inherit;
+
+  &:hover,
+  &:focus {
+    background-color: $main-green;
+  }
+
+  &:active {
+    background-color: $main-green;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &[disabled] {
+    background-color: $main-green;
+  }
+}
+
+.buttons {
+  text-transform: uppercase;
+  padding: 20px 40px 20px 40px;
+  font-family: "ofont.ru_Roboto", sans-serif;
+  font-size: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+.common-header {
+  font-size: 45px;
+  line-height: 50px;
+}

@@ -1,0 +1,395 @@
+@import url(global/normalize.css);
+@font-face {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff"); }
+
+@font-face {
+  font-family: 'roboto-italic';
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/roboto-italic.woff2") format("woff2"), url("../fonts/roboto-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: 'ofont.ru_Roboto';
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("/source/fonts/ofont.ru_Roboto.woff2") format("woff2"), url("/source/fonts/ofont.ru_Roboto.woff") format("woff"); }
+
+@font-face {
+  font-family: 'LibreBaskerville-Bold';
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("/source/fonts/LibreBaskerville-Bold.woff2") format("woff2"), url("/source/fonts/LibreBaskerville-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'LibreBaskerville-Regular';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("/source/fonts/LibreBaskerville-Regular.woff2") format("woff2"), url("/source/fonts/LibreBaskerville-Regular.woff") format("woff"); }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #414840;
+  text-transform: uppercase;
+  min-height: 100%;
+  background: #ffffff; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.list-style {
+  margin: 0;
+  padding-left: 0;
+  list-style: none; }
+
+.container {
+  padding: 0 99px; }
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  text-transform: capitalize;
+  font-family: "LibreBaskerville-Regular";
+  font-weight: 400; }
+
+p {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+.button {
+  background-color: #414840;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  font-family: inherit; }
+  .button:hover, .button:focus {
+    background-color: #414840; }
+  .button:active {
+    background-color: #414840;
+    color: rgba(255, 255, 255, 0.3); }
+  .button[disabled] {
+    background-color: #414840; }
+
+.buttons {
+  text-transform: uppercase;
+  padding: 20px 40px 20px 40px;
+  font-family: "ofont.ru_Roboto", sans-serif;
+  font-size: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px; }
+
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0; }
+
+input,
+textarea {
+  font-family: inherit; }
+
+.common-header {
+  font-size: 45px;
+  line-height: 50px; }
+
+.main-nav {
+  color: #414840; }
+
+.main-nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+  margin-top: 14px; }
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding-left: 0;
+  justify-content: space-between;
+  width: 796px;
+  margin: 0;
+  padding-left: 0;
+  list-style: none; }
+
+.main-nav__link {
+  color: #414840;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px; }
+  .main-nav__link--border {
+    border: 2px solid #475f45;
+    box-sizing: border-box;
+    padding: 15px 30px 15px 30px; }
+
+.buy-tickets__wrapper {
+  display: flex;
+  margin-bottom: 115px;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.buy-tickets__content {
+  display: flex;
+  margin-top: 198px;
+  flex-direction: column; }
+
+.buy-tickets__buttons {
+  display: flex;
+  flex-wrap: wrap; }
+
+.buy-tickets__button {
+  background-color: #475F45;
+  color: #ffffff;
+  margin-right: 16px; }
+
+.buy-tickets__header {
+  font-size: 57px;
+  line-height: 63px;
+  margin-bottom: 16px; }
+
+.buy-tickets__text {
+  font-weight: 300;
+  font-family: "ofont.ru_Roboto", sans-serif;
+  text-transform: capitalize;
+  font-size: 25px;
+  line-height: 37px;
+  color: #414840;
+  margin-bottom: 32px;
+  width: 471px; }
+
+.buy-tickets__link {
+  box-sizing: border-box;
+  border: 2px solid #475F45; }
+
+.discover {
+  background: #343D33;
+  position: relative;
+  color: #ffffff; }
+
+.discover:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.07;
+  background-image: url(../img/leaves.png);
+  background-repeat: no-repeat;
+  background-position: right 325px; }
+
+.discover__wrapper {
+  padding: 96px 80px; }
+
+.discover__content {
+  display: flex;
+  margin-bottom: 64px;
+  align-items: flex-start; }
+
+.discover__slogan {
+  font-size: 45px;
+  line-height: 50px;
+  margin-bottom: 32px; }
+
+.discover__words {
+  margin-left: 89px;
+  text-transform: none;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column; }
+
+.discover__link {
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  width: 185px;
+  height: 56px;
+  text-align: justify;
+  padding-left: 34px;
+  padding-right: 34px;
+  margin-bottom: 16px; }
+
+.discover__text {
+  margin-bottom: 42px; }
+
+.news__wrapper {
+  margin-top: 96px; }
+
+.news__text-part-wrapper {
+  display: flex;
+  flex-direction: column; }
+
+.news__posts-wrapper {
+  display: flex;
+  margin-bottom: 96px; }
+
+.news__content-wrapper {
+  margin-right: 26px;
+  width: 520px;
+  margin-left: 24px; }
+
+.news__date {
+  font-family: "Roboto-italic", sans-serif;
+  text-transform: none; }
+
+.news__text-part-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px; }
+
+.news__text-part--column {
+  display: flex;
+  border-bottom: 1px solid #C4C4C4;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  align-items: start; }
+  .news__text-part--column:last-child {
+    border-bottom: none; }
+  .news__text-part--column:first-child {
+    padding-top: 0; }
+
+.news__posts::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 7px;
+  left: -151px;
+  width: 131px;
+  height: 2px;
+  opacity: 40%;
+  background-color: #475F45; }
+
+.news__posts {
+  margin-left: 151px;
+  position: relative;
+  font-family: "ofont.ru_Roboto";
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  margin-top: 16px;
+  margin-bottom: 48px;
+  align-items: center;
+  display: flex; }
+
+.news__posts::after {
+  position: static;
+  display: block;
+  content: '';
+  background-image: url(/img/icons/arrow-right.svg);
+  width: 24px;
+  height: 24px;
+  margin-left: 7px; }
+
+.news__header {
+  font-size: 23px;
+  line-height: 25px;
+  margin-bottom: 12px;
+  margin-top: 15px; }
+
+.news__text {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: none;
+  margin-bottom: 12px; }
+
+.page-footer {
+  background-color: #414840;
+  color: #ffffff; }
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+  margin-bottom: 40px; }
+
+.page-footer__copyright {
+  background-color: #343D33; }
+
+.page-footer__link {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  color: #ffffff;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 16px; }
+
+.page-footer__sitemap-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none; }
+
+.page-footer__list-socials {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between; }
+
+.page-footer__text {
+  width: 269px;
+  text-transform: none;
+  margin-top: 20px; }
+
+.page-footer__social-wrapper {
+  display: flex; }
+
+.page-footer__social {
+  width: 192px;
+  margin-right: 89px; }
+
+.page-footer__header {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 20px; }
+
+.page-footer__copyright-text {
+  text-transform: none;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  padding-top: 29px;
+  padding-bottom: 30px; }
+
+/*# sourceMappingURL=style.css.map */

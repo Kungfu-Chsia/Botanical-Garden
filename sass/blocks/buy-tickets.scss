@@ -42,4 +42,10 @@
 .buy-tickets__link {
   box-sizing: border-box;
   border: 2px solid $buttons-green;
+  color: $buttons-green;
+
+  &:hover,
+  &:focus {
+    color: $main-green;
+  }
 }

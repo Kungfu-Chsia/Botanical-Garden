@@ -117,6 +117,10 @@ a {
   line-height: 16px;
   letter-spacing: 2px; }
 
+.buttons a:hover {
+  opacity: 0.3;
+}
+
 fieldset {
   min-width: 0;
   margin: 0;
@@ -199,6 +203,7 @@ textarea {
 
 .buy-tickets__link {
   box-sizing: border-box;
+  color: #475f45;
   border: 2px solid #475F45; }
 
 .discover {
@@ -345,6 +350,11 @@ textarea {
 
 .page-footer__copyright {
   background-color: #343D33; }
+
+
+.page-footer__item a:hover {
+  opacity: 0.3;
+}
 
 .page-footer__link {
   margin: 0;

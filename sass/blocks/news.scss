@@ -50,7 +50,7 @@
   content: '';
   position: absolute;
   display: block;
-  top: 7px;
+  top: 10px;
   left: -151px;
   width: 131px;
   height: 2px;
@@ -64,6 +64,7 @@
   font-family: "ofont.ru_Roboto";
   font-size: 14px;
   line-height: 16px;
+  color: $buttons-green;
   letter-spacing: 2px;
   margin-top: 16px;
   margin-bottom: 48px;
@@ -75,7 +76,7 @@
   position: static;
   display: block;
   content: '';
-  background-image: url(/img/icons/arrow-right.svg);
+  background-image: url(../img/icons/arrow-right.svg);
   width: 24px;
   height: 24px;
   margin-left: 7px;
@@ -86,6 +87,14 @@
   line-height: 25px;
   margin-bottom: 12px;
   margin-top: 15px;
+
+  & a {
+    color: $main-green;
+  }
+
+  & a:hover {
+    opacity: 0.3;
+  }
 }
 
 .news__text {
@@ -94,4 +103,8 @@
   line-height: 24px;
   text-transform: none;
   margin-bottom: 12px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

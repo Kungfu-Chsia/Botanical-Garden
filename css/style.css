@@ -116,10 +116,8 @@ a {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 2px; }
-
-.buttons a:hover {
-  opacity: 0.3;
-}
+  .buttons:hover {
+    opacity: 0.3; }
 
 fieldset {
   min-width: 0;
@@ -165,6 +163,8 @@ textarea {
     border: 2px solid #475f45;
     box-sizing: border-box;
     padding: 15px 30px 15px 30px; }
+  .main-nav__link:hover {
+    opacity: 0.3; }
 
 .buy-tickets__wrapper {
   display: flex;
@@ -203,8 +203,10 @@ textarea {
 
 .buy-tickets__link {
   box-sizing: border-box;
-  color: #475f45;
-  border: 2px solid #475F45; }
+  border: 2px solid #475F45;
+  color: #475F45; }
+  .buy-tickets__link:hover, .buy-tickets__link:focus {
+    color: #414840; }
 
 .discover {
   background: #343D33;
@@ -297,7 +299,7 @@ textarea {
   content: '';
   position: absolute;
   display: block;
-  top: 7px;
+  top: 10px;
   left: -151px;
   width: 131px;
   height: 2px;
@@ -310,6 +312,7 @@ textarea {
   font-family: "ofont.ru_Roboto";
   font-size: 14px;
   line-height: 16px;
+  color: #475F45;
   letter-spacing: 2px;
   margin-top: 16px;
   margin-bottom: 48px;
@@ -320,7 +323,7 @@ textarea {
   position: static;
   display: block;
   content: '';
-  background-image: url(/img/icons/arrow-right.svg);
+  background-image: url(../img/icons/arrow-right.svg);
   width: 24px;
   height: 24px;
   margin-left: 7px; }
@@ -330,6 +333,10 @@ textarea {
   line-height: 25px;
   margin-bottom: 12px;
   margin-top: 15px; }
+  .news__header a {
+    color: #414840; }
+  .news__header a:hover {
+    opacity: 0.3; }
 
 .news__text {
   font-family: "Roboto";
@@ -337,6 +344,8 @@ textarea {
   line-height: 24px;
   text-transform: none;
   margin-bottom: 12px; }
+  .news__text:hover {
+    text-decoration: underline; }
 
 .page-footer {
   background-color: #414840;
@@ -350,11 +359,6 @@ textarea {
 
 .page-footer__copyright {
   background-color: #343D33; }
-
-
-.page-footer__item a:hover {
-  opacity: 0.3;
-}
 
 .page-footer__link {
   margin: 0;
@@ -401,5 +405,8 @@ textarea {
   text-align: center;
   padding-top: 29px;
   padding-bottom: 30px; }
+
+.page-footer__item a:hover {
+  opacity: 0.3; }
 
 /*# sourceMappingURL=style.css.map */

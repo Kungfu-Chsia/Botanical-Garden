@@ -254,7 +254,8 @@ textarea {
   text-align: justify;
   padding-left: 34px;
   padding-right: 34px;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  z-index: 2; }
 
 .discover__text {
   margin-bottom: 42px; }
